@@ -7,7 +7,7 @@ export const Container = styled.div`
     align-items: center;
     background: #282828;
     padding: 12px;
-`
+`;
 
 export const Current = styled.div`
     display: flex;
@@ -52,7 +52,23 @@ export const Controls = styled.div`
         border: 0;
         margin: 0 15px;
     }
-`
+`;
+
+export const Time = styled.div`
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+    span {
+        font-size: 11px;
+        color: #b3b3b3;
+    }
+`;
+
+export const ProgressSlider = styled.div`
+    width: 500px;
+    margin: 0 15px;
+`;
 
 export const Volume = styled.div`
     display: flex;
