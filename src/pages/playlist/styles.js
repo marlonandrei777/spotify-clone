@@ -73,5 +73,20 @@ export const SongList = styled.table`
         font-size: 13px;
         padding: 0 10px;
         line-height: 40px; // espaçamento entre as tabelas (tamanho a altura da td)
+        
+        &:first-child {
+            width: 80px;
+            text-align: right;
+        }
+
+        &:last-child {
+            text-align: right;
+        }
     }
+
+    tbody tr:hover td {
+        background: #282828;
+    }
+
+    
 `
