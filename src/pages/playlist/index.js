@@ -1,6 +1,9 @@
 import React from 'react';
 
-import { Container, Header } from './styles';
+import { Container, Header, SongList } from './styles';
+
+import ClockIcon from '../../assets/images/clock.svg';
+import PlusIcon from '../../assets/images/plus.svg';
 
 const Playlist = () => (
     <Container>
@@ -18,6 +21,62 @@ const Playlist = () => (
                 <button>PLAY</button>
             </div>     
         </Header>
+
+        <SongList cellPadding={0} cellSpacing={0}>
+            <thead>
+                <th />
+                <th>Título</th>
+                <th>Artista</th>
+                <th>Álbum</th>
+                <th><img src={ClockIcon} alt="Duração" /></th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><img src={PlusIcon} alt="Adiconar"/></td>
+                    <td>Breaking the Habit</td>
+                    <td>Linkin Park</td>
+                    <td>Meteora</td>
+                    <td>3:26</td>
+                </tr>
+                <tr>
+                    <td><img src={PlusIcon} alt="Adiconar"/></td>
+                    <td>Breaking the Habit</td>
+                    <td>Linkin Park</td>
+                    <td>Meteora</td>
+                    <td>3:26</td>
+                </tr>
+                <tr>
+                    <td><img src={PlusIcon} alt="Adiconar"/></td>
+                    <td>Breaking the Habit</td>
+                    <td>Linkin Park</td>
+                    <td>Meteora</td>
+                    <td>3:26</td>
+                </tr>
+                <tr>
+                    <td><img src={PlusIcon} alt="Adiconar"/></td>
+                    <td>Breaking the Habit</td>
+                    <td>Linkin Park</td>
+                    <td>Meteora</td>
+                    <td>3:26</td>
+                </tr>
+                <tr>
+                    <td><img src={PlusIcon} alt="Adiconar"/></td>
+                    <td>Breaking the Habit</td>
+                    <td>Linkin Park</td>
+                    <td>Meteora</td>
+                    <td>3:26</td>
+                </tr>
+                <tr>
+                    <td><img src={PlusIcon} alt="Adiconar"/></td>
+                    <td>Breaking the Habit</td>
+                    <td>Linkin Park</td>
+                    <td>Meteora</td>
+                    <td>3:26</td>
+                </tr>
+            </tbody>
+        </SongList>
+
     </Container>
 );
 
