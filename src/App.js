@@ -15,6 +15,7 @@ import Routes from './routes';
 import store from './store';
 
 const App = () => (
+
   /* da o acesso aos componentes para informações q estão
   contidas na url, como, parametros querystrings..
   qualquer informação q venha da url */
