@@ -1,7 +1,22 @@
-import styled from 'styled-components';
+/* css: aplicavárias regras ao mesmo tempo p quando o componente
+tiver uma certa propriedade */
+import styled, { css } from 'styled-components';
+
+import { Spinner } from '../../components/Loading/styles';
 
 export const Container = styled.div`
     margin-top: 30px;
+    
+    ${Spinner} {
+        height: 48px;
+    }
+
+    ${props => props.loading && css`
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    `}
 `;
 
 export const Header = styled.div`
